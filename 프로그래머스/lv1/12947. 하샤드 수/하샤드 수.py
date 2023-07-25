@@ -1,5 +1,4 @@
 def solution(x):
-      n = x
 #     sum = 0
 
 #     while(n != 0):
@@ -12,5 +11,5 @@ def solution(x):
 #         return True
 #     else:
 #         return False
-
+      n = x
       return n%sum(int(x) for x in str(n)) == 0
