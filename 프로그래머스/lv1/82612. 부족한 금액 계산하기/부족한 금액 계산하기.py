@@ -1,10 +1,12 @@
 def solution(price, money, count):
-    answer = 0
+#     answer = 0
 
-    for i in range(1,count+1):
-        answer += price*i
+#     for i in range(1,count+1):
+#         answer += price*i
 
-    if(answer>money):
-        return answer-money
-    else:
-        return 0
+#     if(answer>money):
+#         return answer-money
+#     else:
+#         return 0
+
+    return max(price*count*(count+1)/2-money,0)
